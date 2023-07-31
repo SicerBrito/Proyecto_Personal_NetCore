@@ -13,7 +13,7 @@ Endpoints para ser consumidos por las aplicaciones externas.
 
 
 
-## Comandos utilizados para la creacion de mi proyecto (La estructura o Base del proyecto) <img src="https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.0-preview.6.23329.4/icon" alt="EntityFrameworkCore" style="width: 25px;"> <img src="https://api.nuget.org/v3-flatcontainer/syrianballas.automapper.extensions.microsoft.dependencyinjection.signed/3.2.0/icon" alt="img" style="width: 25px;"> <img src="https://nuget.org/Content/gallery/img/default-package-icon.svg" alt="img" style="width: 25px;"> <img src="https://api.nuget.org/v3-flatcontainer/pomelo.entityframeworkcore.mysql/7.0.0/icon" alt="img" style="width: 25px;">
+## Comandos utilizados para la creacion de mi proyecto (La estructura o Base del proyecto) <img src="https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.0-preview.6.23329.4/icon" alt="EntityFrameworkCore" style="width: 25px;"> <img src="https://api.nuget.org/v3-flatcontainer/syrianballas.automapper.extensions.microsoft.dependencyinjection.signed/3.2.0/icon" alt="img" style="width: 25px;"> <img src="https://nuget.org/Content/gallery/img/default-package-icon.svg" alt="img" style="width: 25px;"> <img src="https://api.nuget.org/v3-flatcontainer/pomelo.entityframeworkcore.mysql/7.0.0/icon" alt="pomelo" style="width: 25px;">
 
 ```Terminal
 1. dotnet tool install --global dotnet-ef

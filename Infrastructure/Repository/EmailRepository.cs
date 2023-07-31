@@ -36,7 +36,7 @@ public class EmailRepository : IEmail
 
     public async Task<Email> GetByIdAsync(int Id)
     {
-        return await _context.Set<Email>().FindAsync(Id);
+        return (await _context.Set<Email>().FindAsync(Id))!;
     }
 
     public void Remove(Email entity)

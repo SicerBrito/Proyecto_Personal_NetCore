@@ -18,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Telefono>>> Get()
         {
-            var telefonos = await _unitofwork.Telefonos.GetAllAsync();
+            var telefonos = await _unitofwork.Telefonos!.GetAllAsync();
             return Ok(telefonos);
         }
 
@@ -27,16 +27,16 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var telefono = await _unitofwork.Telefonos.GetByIdAsync(id);
+            var telefono = await _unitofwork.Telefonos!.GetByIdAsync(id)!;
             return Ok(telefono);
         }
 
-        [HttpGet]
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Telefono>> Post(Telefono telefono)
         {
-            this._unitofwork.Telefonos.Add(telefono);
+            this._unitofwork.Telefonos!.Add(telefono);
             await _unitofwork.SaveAsync();
             if (telefono == null)
             {
@@ -44,5 +44,6 @@ namespace API.Controllers;
             }
             return CreatedAtAction(nameof(Post),new {id= telefono.Id}, telefono);
         }
+        
 
     }

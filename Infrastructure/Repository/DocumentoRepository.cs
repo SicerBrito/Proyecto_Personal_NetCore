@@ -37,7 +37,7 @@ public class DocumentoRepository : IDocumento
 
     public async Task<Documento>? GetByIdAsync(int Id)
     {
-        return await _context.Set<Documento>().FindAsync(Id);
+        return (await _context.Set<Documento>().FindAsync(Id))!;
     }
 
     public void Remove(Documento entity)

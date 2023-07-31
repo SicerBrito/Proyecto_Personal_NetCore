@@ -20,4 +20,8 @@ NombreEmpl, TelEmpl, MovilEmpl, Especialidad
 Diagnostico Taller
 
 d)Registro de autorizacion de reparacion el (los) responsable realiza el registro de los hallazgos encontrados en el vehiculo registrado los repuestos que se deban cambiar
-Autorizacion de Reparacion
+Autorizacion de Reparacion Estado, Repuesto, Marca, cantidad, V.U, V.T, Valor total repuesto, Valor mano obra, Valor total reo.
+El valor a facturar dependera de los repuestos que el cliente autorice.
+E)Entrega Vehiculo -> Cuando se realiza la entrega del vehiculo al cliente se realiza el cierre de la orden de reparacion, se debe registrar la fecha y hora de entrega.
+F)El sistema debe contar con un sistema de seguimiento donde el cliente consulte el estado de la reparacion.
+

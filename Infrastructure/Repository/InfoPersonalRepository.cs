@@ -36,7 +36,7 @@ public class InfoPersonalRepository : IInfoPersonal
 
     public async Task<InfoPersonal> GetByIdAsync(int Id)
     {
-        return await _context.Set<InfoPersonal>().FindAsync(Id);
+        return (await _context.Set<InfoPersonal>().FindAsync(Id))!;
     }
 
     public void Remove(InfoPersonal entity)

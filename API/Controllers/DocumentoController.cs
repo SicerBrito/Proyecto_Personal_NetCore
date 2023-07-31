@@ -17,8 +17,8 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Documento>>> Get()
-        {
-            var documentos = await _unitofwork.Documentos.GetAllAsync();
+        {         
+            var documentos = await _unitofwork.Documentos!.GetAllAsync();
             return Ok(documentos);
         }
 
@@ -28,24 +28,35 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var documento = await _unitofwork.Documentos.GetByIdAsync(id);
+            var documento = await _unitofwork.Documentos!.GetByIdAsync(id)!;
             return Ok(documento);
         }
 
 
-        //
-        [HttpGet]
+        
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<Documento>> Post(Documento documento)
+        public async Task<ActionResult<Documento>> Post(DtoDoc data)
         {
-            this._unitofwork.Documentos.Add(documento);
+            var doc = new Documento(){
+                Id = data.Id,
+                Numero = data.Numero,
+                TipoId = data.TipoId,
+            };
+            _unitofwork.Documentos!.Add(doc);
             await _unitofwork.SaveAsync();
-            if (documento == null)
+            if (data == null)
             {
                 return BadRequest();
             }
-            return CreatedAtAction(nameof(Post),new {id= documento.Id}, documento);
+            return CreatedAtAction(nameof(Post),new {id= doc.Id}, doc);
         }
 
+    }
+
+    public class DtoDoc{
+        public int Id { get; set; }
+        public int Numero { get; set; }
+        public int TipoId { get; set; }
     }

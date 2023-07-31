@@ -6,7 +6,7 @@ namespace Infrastructure.UnitOfWork;
 
 public class UnitOfWork : IUnitOfWork, IDisposable
 {
-    private readonly PaginaContext ? _context;
+    private readonly PaginaContext _context;
     private TipoDocumentoRepository ? _TipoDocumento;
     private TelefonoRepository ? _Telefono;
     private EmailRepository ?_Email;
@@ -84,7 +84,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
 
     public async Task<int> SaveAsync()
     {
-        throw new NotImplementedException();
+        return await _context.SaveChangesAsync();
     }
      
 }

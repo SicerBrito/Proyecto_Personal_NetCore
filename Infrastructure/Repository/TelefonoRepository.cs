@@ -36,7 +36,7 @@ public class TelefonoRepository : ITelefono
 
     public async Task<Telefono> GetByIdAsync(int Id)
     {
-        return await _context.Set<Telefono>().FindAsync(Id);
+        return (await _context.Set<Telefono>().FindAsync(Id))!;
     }
 
     public void Remove(Telefono entity)

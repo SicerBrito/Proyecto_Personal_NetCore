@@ -36,7 +36,7 @@ public class LoginRepository : ILogin
 
     public async Task<Login> GetByIdAsync(int Id)
     {
-        return await _context.Set<Login>().FindAsync(Id);
+        return (await _context.Set<Login>().FindAsync(Id))!;
     }
 
     public void Remove(Login entity)

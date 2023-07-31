@@ -52,7 +52,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Humanizer.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -160,7 +160,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -304,7 +304,7 @@
           "System.Text.Json": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/net7.0/_._": {
             "related": ".xml"
           }
         },
@@ -410,7 +410,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+          "lib/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -525,7 +525,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.CodeDom.dll": {
+          "ref/netstandard2.0/_._": {
             "related": ".xml"
           }
         },
@@ -536,7 +536,7 @@
       "System.Text.Encodings.Web/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Text.Encodings.Web.dll": {
+          "lib/net7.0/_._": {
             "related": ".xml"
           }
         },
@@ -561,7 +561,7 @@
           "System.Text.Encodings.Web": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Text.Json.dll": {
+          "lib/net7.0/_._": {
             "related": ".xml"
           }
         },
@@ -1735,11 +1735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/skylab-132/Desktop/probando/API/API.csproj",
+      "projectUniqueName": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/home/skylab-132/Desktop/probando/API/API.csproj",
+      "projectPath": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/API/API.csproj",
       "packagesPath": "/home/skylab-132/.nuget/packages/",
-      "outputPath": "/home/skylab-132/Desktop/probando/API/obj/",
+      "outputPath": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/skylab-132/.nuget/NuGet/NuGet.Config"
@@ -1754,8 +1754,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/skylab-132/Desktop/probando/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/skylab-132/Desktop/probando/Infrastructure/Infrastructure.csproj"
+            "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/Infrastructure/Infrastructure.csproj"
             }
           }
         }

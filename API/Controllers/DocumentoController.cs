@@ -1,17 +1,16 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
     public class DocumentoController : BaseApiController
     {
-        private readonly PaginaContext _context;
+        private readonly IUnitOfWork _unitofwork;
         
-        public DocumentoController(PaginaContext context)
+        public DocumentoController(IUnitOfWork unitofwork)
         {
-            _context = context;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -19,11 +18,9 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Documento>>> Get()
         {
-            var documentos = await _context.Documentos.ToListAsync();
+            var documentos = await _unitofwork.Documentos.GetAllAsync();
             return Ok(documentos);
         }
-
-        // .GetAllAsync();
 
         //Traer Registro de la base de datos
         [HttpGet("{id}")]
@@ -31,8 +28,24 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var documento = await _context.Documentos.FindAsync(id);
+            var documento = await _unitofwork.Documentos.GetByIdAsync(id);
             return Ok(documento);
+        }
+
+
+        //
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<Documento>> Post(Documento documento)
+        {
+            this._unitofwork.Documentos.Add(documento);
+            await _unitofwork.SaveAsync();
+            if (documento == null)
+            {
+                return BadRequest();
+            }
+            return CreatedAtAction(nameof(Post),new {id= documento.Id}, documento);
         }
 
     }

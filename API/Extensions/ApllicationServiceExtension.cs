@@ -1,6 +1,7 @@
 using AspNetCoreRateLimit;
 using Core.Interfaces;
 using Infrastructure.Repository;
+using Infrastructure.UnitOfWork;
 
 namespace API.Extensions;
 
@@ -10,15 +11,14 @@ namespace API.Extensions;
             services.AddCors(options => 
             {
                 options.AddPolicy("CorsPolicy",builder=>
-                    builder.AllowAnyOrigin()    //WithOrigins("http://domini.com")
-                    .AllowAnyMethod()           //WithMethods(*GET", "POST")
-                    .AllowAnyHeader());         //WithHeaders(*accept*, "content-type")
+                    builder.AllowAnyOrigin()        //WithOrigins("http://domini.com")
+                    .AllowAnyMethod()               //WithMethods(*GET", "POST")
+                    .AllowAnyHeader());             //WithHeaders(*accept*, "content-type")
             });
 
 
         public static void AddAplicacionServices(this IServiceCollection services){
-            services.AddScoped<IDocumento,DocumentoRepository>();
-            services.AddScoped<ITipoDocumento,TipoDocumentoRepository>();
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
         }
 
         public static void ConfigureRateLimiting(this IServiceCollection services){

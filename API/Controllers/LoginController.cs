@@ -1,17 +1,16 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
     public class LoginController : BaseApiController
     {
-        private readonly PaginaContext _context;
+        private readonly IUnitOfWork _unitofwork;
         
-        public LoginController(PaginaContext context)
+        public LoginController(IUnitOfWork unitofwork)
         {
-            _context = context;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -19,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Login>>> Get()
         {
-            var logins = await _context.Logins.ToListAsync();
+            var logins = await _unitofwork.Logins.GetAllAsync();
             return Ok(logins);
         }
 
@@ -28,7 +27,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var login = await _context.Logins.FindAsync(id);
+            var login = await _unitofwork.Logins.GetByIdAsync(id);
             return Ok(login);
         }
     }

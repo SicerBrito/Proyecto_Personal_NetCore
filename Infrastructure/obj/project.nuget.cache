@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H3ZTovzPpqHVUMuGv6ni5VJRsEYkIMMgDGTYkx8183OMKAodAI824pwxNfvUlTYJPJWZhTUB8qrtIKi1YHoiAw==",
+  "dgSpecHash": "i+zEMZfvPEJ3rhXimC9X83qx50O9YpxxqpeoM/LAJT/FeJjZTBSdC9q8oyP8ORNk5BPKgh42rqiNRWq/pcaFzw==",
   "success": true,
-  "projectFilePath": "/home/skylab-132/Desktop/probando/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/skylab-132/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
     "/home/skylab-132/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",

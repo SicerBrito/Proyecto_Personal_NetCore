@@ -2,8 +2,11 @@ namespace Core.Interfaces;
 
     public interface IUnitOfWork
     {
-        ITipoDocumento Documentos { get; }
-        ITelefono Telefonos { get; }
-        IEmail Emails { get; }
-        int Save();
+        ITipoDocumento ? TipoDeDocumentos { get; }
+        ITelefono ? Telefonos { get; }
+        IEmail ? Emails { get; }
+        IDocumento ? Documentos { get; }
+        ILogin ? Logins { get; }
+        IInfoPersonal ? DatosPersonales{ get; }
+        Task<int> SaveAsync();
     }

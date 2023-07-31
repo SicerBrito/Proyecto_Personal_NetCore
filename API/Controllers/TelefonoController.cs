@@ -1,17 +1,16 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
     public class TelefonoController : BaseApiController
     {
-        private readonly PaginaContext _context;
+        private readonly IUnitOfWork _unitofwork;
         
-        public TelefonoController(PaginaContext context)
+        public TelefonoController(IUnitOfWork unitofwork)
         {
-            _context = context;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -19,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Telefono>>> Get()
         {
-            var telefonos = await _context.Telefonos.ToListAsync();
+            var telefonos = await _unitofwork.Telefonos.GetAllAsync();
             return Ok(telefonos);
         }
 
@@ -28,7 +27,22 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var telefono = await _context.Telefonos.FindAsync(id);
+            var telefono = await _unitofwork.Telefonos.GetByIdAsync(id);
             return Ok(telefono);
         }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<Telefono>> Post(Telefono telefono)
+        {
+            this._unitofwork.Telefonos.Add(telefono);
+            await _unitofwork.SaveAsync();
+            if (telefono == null)
+            {
+                return BadRequest();
+            }
+            return CreatedAtAction(nameof(Post),new {id= telefono.Id}, telefono);
+        }
+
     }

@@ -1,0 +1,23 @@
+Ayudame con esto
+El centro de diagnostico y reparacion de vehiculos (C&RV) desea crear una aplicacion web que le permita llevar el registro y control de todos los servicios especializados que el taller presta. El C&RV cuenta con diferentes sucursales en el pais.
+Requerimientos:
+a)Diseñar una UI que permita administrar la informacion del taller
+b)Administrar informacion de cada una de las personas que forman parte de C&RV (Mecanicos, Personal Administrativo, Clientes y Proveedores).
+c)El C&RV desea registrar el ingreso de los vehiculos al momento del ingreso se debe realizar una inspeccion del vehiculo para registrar el estado fisico (puertas, faroles, cabina) el taller cuenta con el siguiente formato.
+Datos del cliente
+NroOrden, IdCliente, Nombre, Direccion, NumFijo, NumMovil, Emai
+Datos del Vehiculo
+Placa, Marca, Modelo, Color, KM
+Inspeccion del vehiculo
+Puertas
+f.Izquierda, t.Izquierda, f.derecha, t.derecha
+Cabina
+marca, estado, techo, muebles, tapetes, otros
+Diagnostico Cliente
+Personal Responsable
+IdEmpl
+NombreEmpl, TelEmpl, MovilEmpl, Especialidad
+Diagnostico Taller
+
+d)Registro de autorizacion de reparacion el (los) responsable realiza el registro de los hallazgos encontrados en el vehiculo registrado los repuestos que se deban cambiar
+Autorizacion de Reparacion

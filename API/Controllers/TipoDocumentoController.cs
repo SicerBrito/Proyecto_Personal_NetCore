@@ -6,11 +6,11 @@ namespace API.Controllers;
 
     public class TipoDocumentoController : BaseApiController
     {
-        private readonly ITipoDocumento _tipodocumentoRepository;
+        private readonly IUnitOfWork _unitofwork;
         
-        public TipoDocumentoController(ITipoDocumento tipodocumentoRepository)
+        public TipoDocumentoController(IUnitOfWork unitofwork)
         {
-            _tipodocumentoRepository = tipodocumentoRepository;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -18,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<TipoDocumento>>> Get()
         {
-            var tipoDocumento = await _tipodocumentoRepository.GetAllAsync();
+            var tipoDocumento = await _unitofwork.TipoDeDocumentos.GetAllAsync();
             return Ok(tipoDocumento);
         }
         
@@ -27,7 +27,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var tipodocumento = await _tipodocumentoRepository.GetByIdAsync(id);
+            var tipodocumento = await _unitofwork.TipoDeDocumentos.GetByIdAsync(id);
             return Ok(tipodocumento);
         }
         

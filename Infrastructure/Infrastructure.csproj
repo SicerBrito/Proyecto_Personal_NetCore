@@ -12,7 +12,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disabled</Nullable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

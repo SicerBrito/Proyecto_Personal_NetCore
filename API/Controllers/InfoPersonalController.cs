@@ -1,17 +1,16 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
     public class InfoPersonalController :BaseApiController
     {
-        private readonly PaginaContext _context;
+        private readonly IUnitOfWork _unitofwork;
         
-        public InfoPersonalController(PaginaContext context)
+        public InfoPersonalController(IUnitOfWork unitofwork)
         {
-            _context = context;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -19,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<InfoPersonal>>> Get()
         {
-            var datosPersonales = await _context.DatosPersonales.ToListAsync();
+            var datosPersonales = await _unitofwork.DatosPersonales.GetAllAsync();
             return Ok(datosPersonales);
         }
 
@@ -28,7 +27,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var datoPersonal = await _context.DatosPersonales.FindAsync(id);
+            var datoPersonal = await _unitofwork.DatosPersonales.GetByIdAsync(id);
             return Ok(datoPersonal);
         }
     }

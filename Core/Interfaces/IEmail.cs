@@ -13,4 +13,5 @@ namespace Core.Interfaces;
         void Remove(Email entity);
         void RemoveRange(IEnumerable<Email> entities);
         void Update(Email entity);
+        
     }

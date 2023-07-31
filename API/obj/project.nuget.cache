@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vTT/kTSgBOva5SEZHQx5+Q/ba7LWZfgl0vhm254oozAzRTdAupd0fwodFrj9d/TsjrLOXvtIwqW48tX3Is9xkQ==",
+  "dgSpecHash": "EUfSDa4yICudPuFjrXH2jZ9zs7iiRVBPPYybbWWacGH0bR+XU4a23yrCiOl+N9VQLLj72RbSyJOlOsoFiix4cA==",
   "success": true,
-  "projectFilePath": "/home/skylab-132/Desktop/probando/API/API.csproj",
+  "projectFilePath": "/home/skylab-132/NetCore/Proyecto_Personal_NetCore/API/API.csproj",
   "expectedPackageFiles": [
     "/home/skylab-132/.nuget/packages/aspnetcoreratelimit/5.0.0/aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "/home/skylab-132/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",

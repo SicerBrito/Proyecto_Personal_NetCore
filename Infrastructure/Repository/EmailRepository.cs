@@ -10,6 +10,10 @@ public class EmailRepository : IEmail
 {
     protected readonly PaginaContext _context;
 
+    public EmailRepository(PaginaContext context){
+        _context = context;
+    }
+
     public void Add(Email entity)
     {
         _context.Set<Email>().Add(entity);

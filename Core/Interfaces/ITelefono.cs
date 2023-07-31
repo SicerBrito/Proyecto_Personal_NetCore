@@ -7,7 +7,7 @@ namespace Core.Interfaces;
     {
         Task<Telefono> ? GetByIdAsync(int Id);
         Task<IEnumerable<Telefono>> GetAllAsync();
-        Task<Telefono> Find(Expression<Func<Telefono,bool>> expression);
+        IEnumerable<Telefono> Find(Expression<Func<Telefono,bool>> expression);
         void Add(Telefono entity);
         void AddRange(IEnumerable<Telefono> entities);
         void Remove(Telefono entity);

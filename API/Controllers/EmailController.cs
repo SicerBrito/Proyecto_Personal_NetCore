@@ -1,17 +1,16 @@
 using Core.Entities;
-using Infrastructure.Data;
+using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
     public class EmailController : BaseApiController
     {   
-        private readonly PaginaContext _context;
+        private readonly IUnitOfWork _unitofwork;
         
-        public EmailController(PaginaContext context)
+        public EmailController(IUnitOfWork unitofwork)
         {
-            _context = context;
+            _unitofwork = unitofwork;
         }
 
         [HttpGet]
@@ -19,7 +18,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IEnumerable<Email>>> Get()
         {
-            var emails = await _context.Emails.ToListAsync();
+            var emails = await _unitofwork.Emails.GetAllAsync();
             return Ok(emails);
         }
 
@@ -28,7 +27,7 @@ namespace API.Controllers;
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get(int id)
         {
-            var email = await _context.Emails.FindAsync(id);
+            var email = await _unitofwork.Emails.GetByIdAsync(id);
             return Ok(email);
         }
         

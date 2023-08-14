@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-11T22:54:08.007Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="JiR22eudRqQ7dzWQkwR0" version="21.6.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-08-14T01:14:38.924Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0" etag="4CxY7nnULbUK8Cy5xsDZ" version="21.6.8" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2261" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2191" dy="1964" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1448,7 +1448,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3jHtPLc48pnKQNQPThW9" name="Page-3">
-    <mxGraphModel dx="5630" dy="2650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="7670" dy="3975" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1601,7 +1601,7 @@
         <mxCell id="DDgoxLzPaBwAgdazu1eA-1" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="720" y="1600" width="440" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="DDgoxLzPaBwAgdazu1eA-2" value="&lt;div&gt;IdFacturaRevision&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;NroDeFactura&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Mecanico_Id&lt;/div&gt;&lt;div&gt;FechaRevision&lt;/div&gt;&lt;div&gt;ResultadoRevision&lt;/div&gt;&lt;div&gt;Descripcion&lt;/div&gt;&lt;div&gt;ArreglosRecomendados&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;Aprobacion&lt;/div&gt;&lt;div&gt;DatosAdicionales&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-1" vertex="1">
+        <mxCell id="DDgoxLzPaBwAgdazu1eA-2" value="&lt;div&gt;IdNroDeFacturaRevision&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Mecanico_Id&lt;/div&gt;&lt;div&gt;FechaRevision&lt;/div&gt;&lt;div&gt;ResultadoRevision&lt;/div&gt;&lt;div&gt;Descripcion&lt;/div&gt;&lt;div&gt;ArreglosRecomendados&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;FirmaAprobacion&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-1" vertex="1">
           <mxGeometry x="20" y="40" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="DDgoxLzPaBwAgdazu1eA-3" value="FacturaRevision" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" parent="DDgoxLzPaBwAgdazu1eA-1" vertex="1">
@@ -1610,7 +1610,7 @@
         <mxCell id="DDgoxLzPaBwAgdazu1eA-10" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1200" y="1600" width="440" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="DDgoxLzPaBwAgdazu1eA-11" value="&lt;div&gt;IdFacturaAutorizacion&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;NroDeFactura&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;FacturaRevison_Id&lt;/div&gt;&lt;div&gt;Autorizaciones&lt;/div&gt;&lt;div&gt;DescripcionAutorizaciones&lt;/div&gt;&lt;div&gt;DatosAdicionales&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-10" vertex="1">
+        <mxCell id="DDgoxLzPaBwAgdazu1eA-11" value="&lt;div&gt;IdNroDeFacturaAutorizacion&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;FacturaRevison_Id&lt;/div&gt;&lt;div&gt;Autorizaciones&lt;/div&gt;&lt;div&gt;DescripcionAutorizaciones&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-10" vertex="1">
           <mxGeometry x="20" y="40" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="DDgoxLzPaBwAgdazu1eA-12" value="FacturaAutorizacion" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" parent="DDgoxLzPaBwAgdazu1eA-10" vertex="1">
@@ -1619,12 +1619,18 @@
         <mxCell id="DDgoxLzPaBwAgdazu1eA-17" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1680" y="1600" width="440" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="DDgoxLzPaBwAgdazu1eA-17" source="DDgoxLzPaBwAgdazu1eA-18">
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="DDgoxLzPaBwAgdazu1eA-17" source="DDgoxLzPaBwAgdazu1eA-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-1350" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-30" y="135" />
+              <mxPoint x="-30" y="770" />
+              <mxPoint x="-1230" y="770" />
+              <mxPoint x="-1230" y="230" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="DDgoxLzPaBwAgdazu1eA-18" value="&lt;div&gt;IdFacturaEntregaVehiculo&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;NroDeFactura&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;Vehículo_Id&lt;/div&gt;&lt;div&gt;Servicio&lt;br&gt;&lt;/div&gt;&lt;div&gt;DescripcionServicio&lt;/div&gt;&lt;div&gt;EstadoDelVehiculo&lt;br&gt;&lt;div&gt;&lt;div&gt;NombresDelEntregador&lt;/div&gt;&lt;div&gt;ApellidosDelEntregador&lt;/div&gt;&lt;div&gt;NroDeDocumento&lt;/div&gt;&lt;div&gt;TipoDeDocumento&lt;br&gt;&lt;/div&gt;&lt;div&gt;TelefonoProveedor&lt;br&gt;&lt;/div&gt;&lt;div&gt;Genero&lt;/div&gt;&lt;/div&gt;&lt;div&gt;PersonaQueLoRecibio&lt;/div&gt;&lt;/div&gt;&lt;div&gt;DatosAdicionales&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-17" vertex="1">
+        <mxCell id="DDgoxLzPaBwAgdazu1eA-18" value="&lt;div&gt;IdNroDeFacturaEntregaVehiculo&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;Vehículo_Id&lt;/div&gt;&lt;div&gt;Servicio&lt;br&gt;&lt;/div&gt;&lt;div&gt;DescripcionServicio&lt;/div&gt;&lt;div&gt;EstadoDelVehiculo&lt;br&gt;&lt;div&gt;&lt;div&gt;NombresDelEntregador&lt;/div&gt;&lt;div&gt;ApellidosDelEntregador&lt;/div&gt;&lt;div&gt;NroDeDocumento&lt;/div&gt;&lt;div&gt;TipoDeDocumento&lt;br&gt;&lt;/div&gt;&lt;div&gt;TelefonoProveedor&lt;br&gt;&lt;/div&gt;&lt;div&gt;Genero&lt;/div&gt;&lt;/div&gt;&lt;div&gt;PersonaQueLoRecibio&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-17" vertex="1">
           <mxGeometry x="20" y="40" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="DDgoxLzPaBwAgdazu1eA-19" value="FacturaEntregaVehiculo" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" parent="DDgoxLzPaBwAgdazu1eA-17" vertex="1">
@@ -1633,7 +1639,7 @@
         <mxCell id="DDgoxLzPaBwAgdazu1eA-20" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2160" y="1600" width="440" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="DDgoxLzPaBwAgdazu1eA-21" value="&lt;div&gt;IdFacturaCompra&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;Proveedor_Id&lt;/div&gt;&lt;div&gt;NroDeFactura&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;br&gt;&lt;/div&gt;&lt;div&gt;FechaDeCompra&lt;/div&gt;&lt;div&gt;ProductosComprados_Id&lt;/div&gt;&lt;div&gt;FechaDeRecepcion&lt;/div&gt;&lt;div&gt;NombreDelReceptor&lt;/div&gt;&lt;div&gt;EstadoDeLosRepuestos&lt;/div&gt;&lt;div&gt;DescripcionCompra&lt;/div&gt;&lt;div&gt;EstadoDeLaFactura&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-20" vertex="1">
+        <mxCell id="DDgoxLzPaBwAgdazu1eA-21" value="&lt;div&gt;IdNroDeFacturaCompra&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;Proveedor_Id&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;br&gt;&lt;/div&gt;&lt;div&gt;FechaDeCompra&lt;/div&gt;&lt;div&gt;ProductosComprados_Id&lt;/div&gt;&lt;div&gt;FechaDeRecepcion&lt;/div&gt;&lt;div&gt;NombreDelReceptor&lt;/div&gt;&lt;div&gt;EstadoDeLosRepuestos&lt;/div&gt;&lt;div&gt;DescripcionCompra&lt;/div&gt;&lt;div&gt;EstadoDeLaFactura&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-20" vertex="1">
           <mxGeometry x="20" y="40" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="DDgoxLzPaBwAgdazu1eA-22" value="&lt;div&gt;FacturaCompraDeRepuestos&lt;br&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" parent="DDgoxLzPaBwAgdazu1eA-20" vertex="1">
@@ -1642,7 +1648,7 @@
         <mxCell id="DDgoxLzPaBwAgdazu1eA-24" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="2640" y="1600" width="440" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="DDgoxLzPaBwAgdazu1eA-25" value="&lt;div&gt;IdFacturaVenta&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;&lt;div&gt;NroDeFactura&lt;/div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;ProductosComprados_Id&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;FechaDeRecepcion&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;NombreDelReceptor&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;EstadoDeLosRepuestos&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;DescripcionVenta&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-24" vertex="1">
+        <mxCell id="DDgoxLzPaBwAgdazu1eA-25" value="&lt;div&gt;IdNroDeFacturaVenta&lt;/div&gt;&lt;div&gt;Taller_Id&lt;/div&gt;&lt;div&gt;&lt;div&gt;FechaDeEmisionFactura&lt;/div&gt;&lt;div&gt;Cliente_Id&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;ProductosComprados_Id&lt;br&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;FechaDeRecepcion&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;NombreDelReceptor&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;EstadoDeLosRepuestos&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;DescripcionVenta&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="DDgoxLzPaBwAgdazu1eA-24" vertex="1">
           <mxGeometry x="20" y="40" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="DDgoxLzPaBwAgdazu1eA-26" value="&lt;div&gt;FacturaDeVenta&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=23;" parent="DDgoxLzPaBwAgdazu1eA-24" vertex="1">
@@ -1997,7 +2003,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="BrU6Tny40aOkcSI_0k3T-8" target="kcHXQGyv7DXl1s2Wyhqw-7">
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="BrU6Tny40aOkcSI_0k3T-8" target="kcHXQGyv7DXl1s2Wyhqw-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2980" y="3551" />
@@ -2005,7 +2011,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kcHXQGyv7DXl1s2Wyhqw-81" target="kcHXQGyv7DXl1s2Wyhqw-7">
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kcHXQGyv7DXl1s2Wyhqw-81" target="kcHXQGyv7DXl1s2Wyhqw-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="390" y="1094" />
@@ -2013,20 +2019,48 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="DDgoxLzPaBwAgdazu1eA-3" target="BrU6Tny40aOkcSI_0k3T-29">
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="DDgoxLzPaBwAgdazu1eA-3" target="BrU6Tny40aOkcSI_0k3T-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DDgoxLzPaBwAgdazu1eA-11" target="BrU6Tny40aOkcSI_0k3T-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DDgoxLzPaBwAgdazu1eA-11" target="BrU6Tny40aOkcSI_0k3T-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="1735" />
+              <mxPoint x="1170" y="2370" />
+              <mxPoint x="450" y="2370" />
+              <mxPoint x="450" y="1830" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="DDgoxLzPaBwAgdazu1eA-21" target="BrU6Tny40aOkcSI_0k3T-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="DDgoxLzPaBwAgdazu1eA-21" target="BrU6Tny40aOkcSI_0k3T-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2130" y="1735" />
+              <mxPoint x="2130" y="2370" />
+              <mxPoint x="450" y="2370" />
+              <mxPoint x="450" y="1830" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="DDgoxLzPaBwAgdazu1eA-25" target="BrU6Tny40aOkcSI_0k3T-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="DDgoxLzPaBwAgdazu1eA-25" target="BrU6Tny40aOkcSI_0k3T-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2620" y="1735" />
+              <mxPoint x="2620" y="2370" />
+              <mxPoint x="450" y="2370" />
+              <mxPoint x="450" y="1830" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="y_0-N4HSC8YQaebEaZvi-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kcHXQGyv7DXl1s2Wyhqw-102" target="BrU6Tny40aOkcSI_0k3T-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y_0-N4HSC8YQaebEaZvi-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kcHXQGyv7DXl1s2Wyhqw-102" target="BrU6Tny40aOkcSI_0k3T-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="475" />
+              <mxPoint x="760" y="1270" />
+              <mxPoint x="460" y="1270" />
+              <mxPoint x="460" y="1830" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

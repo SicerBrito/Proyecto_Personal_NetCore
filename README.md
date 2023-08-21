@@ -15,7 +15,7 @@
 
 
 # Índice 📖
-En este caso estoy realizando un proyecto personal junto con su documentacion con el objetivo de mejorar mis habilidades en .Net
+En esta ocasión voy a realizar un proyecto personal junto con su documentacion con el objetivo de mejorar mis habilidades en .Net
 
 - [Documentación](#documentación)
     - [Estructura del Proyecto](#estructura-del-proyecto)

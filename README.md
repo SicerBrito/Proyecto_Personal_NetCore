@@ -19,12 +19,21 @@ En esta ocasión voy a realizar un proyecto personal junto con su documentacion 
 
 - [Documentación](#documentación)
     - [Estructura del Proyecto](#estructura-del-proyecto)
+        - [En Dominio](#en-dominio)
+        - [En Persistencia](#en-persistencia)
+        - [En Aplicacion](#en-aplicacion)
+        - [En WebApi](#en-webapi)
     - [Terminal](#terminal)
         - [Estructura Base](#estructura-base)
         - [Referencias](#referencias)
     - [Gestión de Datos](#gestión-de-datos)
         - [Instalacion de Paquetes](#instalacion-de-paquetes)
-        - [Migrations](#migrations)
+            - [Dominio](#dominio)
+            - [Persistencia](#persistencia)
+            - [WebApi](#webapi)
+        - [Migraciones](#migraciones)
+            - [Crear](#crear)
+            - [Actualizar](#actualizar)
         - [Visualización de posibles errores](#visualización-de-posibles-errores)
 
   
@@ -36,21 +45,23 @@ Mi objetivo con este proyecto es centrarme en el aprendizaje y el desarrollo con
 
 ## Estructura del Proyecto
 Estas son las carpertas de configuracion las cuales vamos a utilizar para nuestros proyectos
- - 📂 En Dominio  
-        Aqui se crean las tablas que representan la BD y van a estar ubicadas las carpetas de Entidades e Interfaces.
 
- - 📂 En Persistencia  
-        Aqui se crea la instancia de conexion a la BD y van a estar ubicadas las carpetas de Data, Configuracion y Migraciones.
+ - #### En Dominio
+   📂 Aqui se crean las tablas que representan la BD y van a estar ubicadas las carpetas de Entidades e Interfaces.
 
- - 📂 En Aplicacion  
-        Aqui se crea la inyeccion de dependecia para la comunicacion con el WebApi y van a estar ubicadas las carpetas de Unidad de trabajo y Repositorios.
+ - #### En Persistencia  
+    📂 Aqui se crea la instancia de conexion a la BD y van a estar ubicadas las carpetas de Data, Configuracion y Migraciones.
+
+ - #### En Aplicacion  
+    📂 Aqui se crea la inyeccion de dependecia para la comunicacion con el WebApi y van a estar ubicadas las carpetas de Unidad de trabajo y Repositorios.
         
- - 📂 En WebApi  
-        Aqui se crean clases encargadas de recibir peticiones de los clientes y van a estar ubicadas las carpetas de Controladores y Extenciones.
+ - #### En WebApi  
+    📂 Aqui se crean clases encargadas de recibir peticiones de los clientes y van a estar ubicadas las carpetas de Controladores y Extenciones.
 
 ---
 
-   <img src="https://media.discordapp.net/attachments/1115646463020634142/1134480692575731812/Presentacion_de_marca_personal_Acuarela_Elegante_y_minimalista_Azul_y_rosa.png?width=1173&height=660" alt="img" style="width: 3000px;">
+<img src="./Img/Relaciones.png" alt="Relaciones" style="width: 3000px;">
+
 
 ---
 
@@ -129,84 +140,88 @@ Estas son las carpertas de configuracion las cuales vamos a utilizar para nuestr
 ## Gestión de Datos
 
 - ### Instalacion de Paquetes
-    - Dominio 📂🔧
-        - dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10  
+
+    - ### Dominio
+
+        - dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10  📂🔧
 
             Agrega el paquete "Microsoft.EntityFrameworkCore" con la versión 7.0.10 al proyecto actual. Entity Framework Core es una biblioteca popular para el acceso a bases de datos en proyectos .NET Core, y esta instrucción instalará la versión específica 7.0.10 de dicha biblioteca en el proyecto. Esto permitirá al proyecto utilizar Entity Framework Core para interactuar con bases de datos.
 
             ---
 
-        - dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11.1.0  
+        - dotnet add package MediatR.Extensions.Microsoft.DependencyInjection --version 11.1.0  📂🔧
 
            Agrega el paquete "MediatR.Extensions.Microsoft.DependencyInjection" con la versión 11.1.0 al proyecto actual. MediatR es una biblioteca que implementa el patrón Mediator para la comunicación entre componentes en aplicaciones .NET, y este paquete proporciona integración con la inyección de dependencias de Microsoft.
 
             ---
 
-        - dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1  
+        - dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1  📂🔧
 
            Agrega el paquete "AutoMapper.Extensions.Microsoft.DependencyInjection" con la versión 12.0.1 al proyecto actual. Este paquete proporciona extensiones para el framework AutoMapper que permiten una fácil integración con la inyección de dependencias de Microsoft.
 
             ---
 
-        - dotnet add package FluentValidation.AspNetCore --version 11.3.0  
+        - dotnet add package FluentValidation.AspNetCore --version 11.3.0  📂🔧
 
            Agrega el paquete "FluentValidation.AspNetCore" con la versión 11.3.0 al proyecto actual. FluentValidation es una biblioteca que permite realizar validaciones en modelos de forma sencilla y declarativa, y este paquete proporciona integración con ASP.NET Core.
 
             ---
 
-        - dotnet add package itext7.pdfhtml --version 5.0.1  
+        - dotnet add package itext7.pdfhtml --version 5.0.1  📂🔧
 
            Agrega el paquete "itext7.pdfhtml" con la versión 5.0.1 al proyecto actual. Este paquete pertenece a iText 7, una biblioteca utilizada para trabajar con archivos PDF en aplicaciones .NET. En particular, "itext7.pdfhtml" es una extensión de iText 7 que permite convertir documentos HTML a PDF.
 
             ---
 
 
-    - Persistencia 📂🔧
-        - dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10  
+    - ### Persistencia 
+
+        - dotnet add package Microsoft.EntityFrameworkCore --version 7.0.10  📂🔧
 
            Agrega el paquete "Microsoft.EntityFrameworkCore" con la versión 7.0.10 al proyecto actual. Entity Framework Core es una biblioteca popular para el acceso a bases de datos en proyectos .NET Core, y esta instrucción instalará la versión específica 7.0.10 de dicha biblioteca en el proyecto. Esto permitirá al proyecto utilizar Entity Framework Core para interactuar con bases de datos.
 
             ---
 
-        - dotnet add package Pomelo.EntityFrameworkCore.MySql --version 7.0.0  
+        - dotnet add package Pomelo.EntityFrameworkCore.MySql --version 7.0.0  📂🔧
 
            Agrega el paquete "Pomelo.EntityFrameworkCore.MySql" con la versión 7.0.0 al proyecto actual. Este paquete proporciona soporte para MySQL en Entity Framework Core y es una opción popular para interactuar con bases de datos MySQL en proyectos .NET Core.
 
             ---
 
-        - dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.10  
+        - dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.10  📂🔧
 
            Agrega el paquete "Microsoft.EntityFrameworkCore.Tools" con la versión 7.0.10 al proyecto actual. Este paquete proporciona herramientas adicionales para trabajar con Entity Framework Core, incluyendo comandos para realizar migraciones de base de datos y generar código a partir de modelos.
 
             ---
 
-        - dotnet add package Dapper --version 2.0.143  
+        - dotnet add package Dapper --version 2.0.143  📂🔧
 
            Agrega el paquete "Dapper" con la versión 2.0.143 al proyecto actual. Dapper es una biblioteca que facilita el acceso y la manipulación de bases de datos en aplicaciones .NET mediante consultas SQL. Proporciona una forma sencilla y eficiente de mapear resultados de consultas a objetos.
 
             ---
 
 
-    - DinoApi 📂🔧
-        - dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.10  
+    - ### WebApi 
+
+        - dotnet add package Microsoft.EntityFrameworkCore.Design --version 7.0.10  📂🔧
 
            Agrega el paquete "Microsoft.EntityFrameworkCore.Design" con la versión 7.0.10 al proyecto actual. Este paquete proporciona herramientas de diseño para Entity Framework Core, que son útiles para trabajar con bases de datos y realizar migraciones en proyectos .NET Core.
 
             ---
 
-        - dotnet add package Newtonsoft.Json --version 13.0.3  
+        - dotnet add package Newtonsoft.Json --version 13.0.3  📂🔧
 
            Agrega el paquete "Newtonsoft.Json" con la versión 13.0.3 al proyecto actual. Newtonsoft.Json es una biblioteca muy utilizada para trabajar con formato JSON en aplicaciones .NET. Proporciona funciones para serializar y deserializar objetos en formato JSON.
 
             ---
 
-        - dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.10  
+        - dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.10  📂🔧
 
            Agrega el paquete "Microsoft.AspNetCore.Authentication.JwtBearer" con la versión 7.0.10 al proyecto actual. Este paquete proporciona funcionalidad para la autenticación basada en tokens JWT (JSON Web Tokens) en aplicaciones ASP.NET Core.
 
             ---
 
-        - dotnet add package Swashbuckle.AspNetCore --version 6.5.0  
+        - dotnet add package Swashbuckle.AspNetCore --version 6.5.0  📂🔧
 
            Agrega el paquete "Swashbuckle.AspNetCore" con la versión 6.5.0 al proyecto actual. Swashbuckle.AspNetCore es una biblioteca que permite generar automáticamente una documentación interactiva (Swagger UI) para tu API ASP.NET Core, lo que facilita la exploración y prueba de los endpoints de la API.
 
@@ -215,36 +230,42 @@ Estas son las carpertas de configuracion las cuales vamos a utilizar para nuestr
 <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/nuget_logo_icon_170908.png" alt="https://cdn.icon-icons.com/icons2/2699/PNG/512/nuget_logo_icon_170908.png" style="width: 3000px;">
 
 
-- ### Migrations  
+- ### Migraciones    
     Se deben utilizar estos comandos para poder aplicar las migraciones y que los cambios se guarden en la base de datos.
-    - dotnet ef migrations add InitialCreate --project ./Persistencia/ --startup-project ./ApiIncidencias/ --output-dir ./Data/Migrations/  ✈️🔧  
 
-        Este comando genera una migración inicial llamada "InitialCreate" utilizando Entity Framework Core. Las migraciones permiten mantener sincronizada la estructura de la base de datos con los cambios en el modelo de datos en proyectos .NET Core.
+    - ### Crear  
+        - dotnet ef migrations add InitialCreate --project ./Persistencia/ --startup-project ./ApiSicer/ --output-dir ./Data/Migrations/  ✈️🔧  
+
+            Este comando genera una migración inicial llamada "InitialCreate" utilizando Entity Framework Core. Las migraciones permiten mantener sincronizada la estructura de la base de datos con los cambios en el modelo de datos en proyectos .NET Core.
 
         ---
-    - dotnet ef database update --project ./Persistencia/ --startup-project ./ApiIncidencias/  ✈️🔧  
 
-        Este comando aplica las migraciones pendientes en la base de datos, lo que implica actualizar la estructura de la base de datos para que coincida con el estado actual del modelo de datos en los proyectos .NET Core involucrados.
+    - ### Actualizar
+        - dotnet ef database update --project ./Persistencia/ --startup-project ./ApiSicer/  ✈️🔧  
+
+            Este comando aplica las migraciones pendientes en la base de datos, lo que implica actualizar la estructura de la base de datos para que coincida con el estado actual del modelo de datos en los proyectos .NET Core involucrados.
 
         ---
 
 - ### Visualización de posibles errores  
-    Este comando se utiliza para construir (compilar) los proyectos en sus respectivos directorios, una ventaja que posee este comando es que nos permite ver que errores podemos tener a la hora de complilar.
+    Este comando se utiliza para construir (compilar) los proyectos en sus respectivos directorios, una ventaja que posee este comando es que nos permite ver que errores podemos tener a la hora de complilar 🏗️
 
-    - dotnet build  
+    - dotnet build 🏗️  
         Compila el proyecto ubicado en el directorio actual. Esto significa que el código fuente del proyecto se compilará en ensamblados ejecutables, bibliotecas u otros tipos de archivos de salida según la configuración del proyecto.  
 
         **Ejemplos:**
 
-        - dotnet build ./Infrastructure/  
+        - dotnet build ./Infrastructure/  🏗️
 
             Compila el proyecto ubicado en la carpeta "Infrastructure". Esto significa que el código fuente del proyecto se compilará en ensamblados ejecutables, bibliotecas o archivos de salida según la configuración del proyecto.
 
             ---
-        - dotnet build ./API/  
+        - dotnet build ./API/  🏗️
 
             Compila el proyecto ubicado en la carpeta "API". Esto significa que el código fuente del proyecto se compilará en ensamblados ejecutables, bibliotecas o archivos de salida según la configuración del proyecto.
 
             --- 
 
 ---
+
+   <img src="https://media.discordapp.net/attachments/1115646463020634142/1134480692575731812/Presentacion_de_marca_personal_Acuarela_Elegante_y_minimalista_Azul_y_rosa.png?width=1173&height=660" alt="img" style="width: 3000px;">
